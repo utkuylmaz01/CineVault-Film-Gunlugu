@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineVault - İzleme İstatistikleri</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">CINEVAULT</a>
+        <div class="nav-links">
+            <a href="index.html">Film Arşivi</a>
+            <a href="tablo.html" class="active">İstatistikler</a>
+            <a href="ekle.html" class="btn-add">+ Yeni Film Ekle</a>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header">
+            <div>
+                <h1>İzleme İstatistikleri ve Veri Tablosu</h1>
+                <p>Arşivinizdeki tüm filmlerin tür dağılımları, puan ortalamaları ve toplu listesi</p>
+            </div>
+        </header>
+
+        <!-- Özet İstatistik Kartları -->
+        <section class="stats-cards">
+            <div class="stat-card">
+                <h3>Toplam İzlenen</h3>
+                <p id="stat-total" class="stat-value">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Ortalama Puan</h3>
+                <p id="stat-avg" class="stat-value">0.0</p>
+            </div>
+            <div class="stat-card">
+                <h3>En Çok İzlenen Tür</h3>
+                <p id="stat-top-genre" class="stat-value">-</p>
+            </div>
+            <div class="stat-card">
+                <h3>En Yüksek Puanlı</h3>
+                <p id="stat-best-movie" class="stat-value" style="font-size: 18px;">-</p>
+            </div>
+        </section>
+
+        <!-- Türlere Göre İstatistik Tablosu -->
+        <section class="table-section">
+            <h2>Türlere Göre Dağılım ve Ortalama Puanlar</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Film Türü</th>
+                        <th>İzlenen Film Sayısı</th>
+                        <th>Türün Ortalama Puanı</th>
+                    </tr>
+                </thead>
+                <tbody id="genre-stats-tbody">
+                    <!-- JavaScript ile dinamik doldurulur -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Tüm Filmlerin Toplu Tablosu -->
+        <section class="table-section">
+            <h2>Tüm İzlenen Filmler Çizelgesi</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Film Adı</th>
+                        <th>Yönetmen</th>
+                        <th>Tür</th>
+                        <th>Çıkış Yılı</th>
+                        <th>İzlenme Tarihi</th>
+                        <th>Puan</th>
+                    </tr>
+                </thead>
+                <tbody id="all-movies-tbody">
+                    <!-- JavaScript ile dinamik doldurulur -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        © 2026 CineVault - CEN227 Internet Programming Projesi (Grup 2)
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

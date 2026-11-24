@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineVault - Film Arşivi</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">CINEVAULT</a>
+        <div class="nav-links">
+            <a href="index.html" class="active">Film Arşivi</a>
+            <a href="tablo.html">İstatistikler</a>
+            <a href="ekle.html" class="btn-add">+ Yeni Film Ekle</a>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header">
+            <div>
+                <h1>Film Arşivim (<span id="total-count">0</span> Film)</h1>
+                <p>İzlediğiniz filmler, verdiğiniz puanlar ve kişisel sinema günlüğünüz</p>
+            </div>
+            <div class="filter-box">
+                <label for="genre-filter">Türe Göre Filtrele:</label>
+                <select id="genre-filter">
+                    <option value="Tümü">Tüm Türler</option>
+                    <option value="Bilim Kurgu">Bilim Kurgu</option>
+                    <option value="Aksiyon">Aksiyon</option>
+                    <option value="Dram">Dram</option>
+                    <option value="Komedi">Komedi</option>
+                    <option value="Gerilim">Gerilim</option>
+                    <option value="Korku">Korku</option>
+                    <option value="Suç">Suç</option>
+                    <option value="Animasyon">Animasyon</option>
+                </select>
+            </div>
+        </header>
+
+        <section id="movie-grid" class="movie-grid">
+            <!-- JavaScript (app.js) tarafından dinamik olarak film kartları buraya basılır -->
+        </section>
+    </main>
+
+    <footer>
+        © 2026 CineVault - CEN227 Internet Programming Projesi (Grup 2)
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
